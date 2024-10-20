@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .input-field {
+            margin-bottom: 10px;
+        }
+        label, input {
+            display: block;
+            width: 100%;
+        }
+        input {
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        .hint {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Login</h2>
+    <div class="input-field">
+        <label for="username">Usuário</label>
+        <input type="text" id="username" placeholder="Digite o usuário">
+    </div>
+    <div class="input-field">
+        <label for="password">Senha</label>
+        <input type="password" id="password" placeholder="Digite a senha">
+    </div>
+    <button onclick="login()">Entrar</button>
+    
+    <div class="hint">
+        <p>Eu sou negro como a noite e gosto de me empoleirar em lugares altos. Minhas chamadas ecoam no crepúsculo, e muitos dizem que sou um sinal de má sorte.</p>
+        <p>00110100 00111001 00100000 00110001 00110000 00110000 00100000 00110101 00110110 00100000 00110001 00110000 00110001 00100000 00110001 00110000 00110000 00100000 00110101 00110011 00100000 00110101 00110001 00100000 00110101 00110111 00100000 00110101 00110101 00100000 00110101 00110110 00100000 00110001 00110000 00110000 00100000 00110101 00110101 00100000 00110101 00110111 00100000 00110101 00110010 00100000 00110100 00111000 00100000 00110101 00110001 00100000 00110101 00110001 00100000 00110101 00110011 00100000 00111001 00111000 00100000 00110101 00110011 00100000 00110101 00110111 00100000 00110101 00110110 00100000 00110100 00111001 00100000 00110101 00110100 00100000 00110001 00110000 00110010 00100000 00110101 00110111 00100000 00110101 00110100 00100000 00110001 00110000 00110001 00100000 00110101 00110011 00100000 00110100 00111001 00100000 00111001 00111000 00100000 00110001 00110000 00110000 00100000 00110101 00110011 00100000 00110101 00110101 00100000 00110101 00110111 00100000 00110001 00110000 00110010 00100000 00110101 00110001 00100000 00111001 00111001 00100000 00110101 00110010 00100000 00110001 00110000 00110010 </p>
+    </div>
+</div>
+
+<script>
+    function login() {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        if (username === 'corvo' && password === '1d8ed53978d7940335b59816f96e51bd579f3c4f') {
+            alert('Parabéns! Você resolveu o enigma!');
+        } else {
+            alert('Usuário ou senha incorretos.');
+        }
+    }
+</script>
+
+</body>
+</html>
